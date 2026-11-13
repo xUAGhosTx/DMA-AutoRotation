@@ -1,0 +1,1 @@
+E:\WoW\ DMA\DEV\wow_dma_app\target\release\dma_daemon.exe: E:\WoW\ DMA\DEV\wow_dma_app\src\daemon.rs E:\WoW\ DMA\DEV\wow_dma_app\src\makcu.rs E:\WoW\ DMA\DEV\wow_dma_app\src\rotation.rs E:\WoW\ DMA\DEV\wow_dma_app\src\vmm.rs
