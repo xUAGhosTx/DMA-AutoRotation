@@ -1,0 +1,75 @@
+[package]
+name = "wow_dma_app"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "wow_dma_app"
+path = "src/main.rs"
+
+[[bin]]
+name = "dma_mcp_server"
+path = "src/mcp_server.rs"
+
+[[bin]]
+name = "dma_daemon"
+path = "src/daemon.rs"
+
+[[bin]]
+name = "dma_cli"
+path = "src/cli.rs"
+
+[[bin]]
+name = "dma_gui"
+path = "src/gui.rs"
+
+[[bin]]
+name = "gen_db"
+path = "src/gen_db.rs"
+
+[[bin]]
+name = "find_sigs"
+path = "src/find_sigs.rs"
+
+[[bin]]
+name = "dma_dumper"
+path = "src/dma_dumper.rs"
+
+[[bin]]
+name = "dma_inspector"
+path = "src/inspector.rs"
+
+[[bin]]
+name = "dma_xref_gui"
+path = "src/xref_gui.rs"
+
+[[bin]]
+name = "dma_calibrator"
+path = "src/calibrator_gui.rs"
+
+[[bin]]
+name = "input_agent"
+path = "src/bin/input_agent.rs"
+
+[dependencies]
+serialport = "4.6"
+colored = "2.1"
+crossterm = "0.28"
+libloading = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Graphics_Gdi",
+    "Win32_System_LibraryLoader",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_System_DataExchange",
+    "Win32_System_Memory"
+] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
