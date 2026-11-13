@@ -1,0 +1,16 @@
+{
+  "dump_timestamp": "2026-11-08 Runtime Auto-Dump",
+  "process_name": "Wow.exe",
+  "pid": 14656,
+  "base_address": "0x00007FF7442E0000",
+  "offsets": {
+    "mouseover_guid_rva": "0x04C18288",
+    "entry_coords_offset": "0x00000060",
+    "target_guid_low_rva": "0x06A32478",
+    "unit_max_health_offset": "0x00001E30",
+    "player_unit_rva": "0x04C1A770",
+    "entity_table_rva": "0x04728BE8",
+    "unit_health_offset": "0x00001E28",
+    "target_guid_high_rva": "0x06A32480"
+  }
+}

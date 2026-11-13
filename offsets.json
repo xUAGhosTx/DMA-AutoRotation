@@ -1,0 +1,40 @@
+{
+  "button_mapping": {
+    "[ 🎯 TargetGUID ]": "target_guid_low_rva (low 64-bit) & target_guid_high_rva (+8 high 64-bit)",
+    "[ 📦 EntityTable ]": "entity_table_rva (Основная хеш-таблица всех сущностей мира)",
+    "[ 👤 PlayerUnit ]": "player_unit_rva (Указатель на структуру активного игрока)",
+    "[ 🖱️ MouseoverGUID ]": "mouseover_guid_rva (GUID цели под курсором мыши)",
+    "[ ❤️ UnitHealth ]": "unit_health_offset (Текущее здоровье) & unit_max_health_offset (+8 Макс. здоровье)",
+    "[ 🗺️ Coords (World) ]": "entry_coords_offset (Вектор 3D-координат сущности X, Y, Z)",
+    "[ 🧭 Facing ]": "entry_facing_offset (Угол поворота взгляда float32)",
+    "[ 🏃 Speed ]": "entry_speed_offset (Скорость перемещения float32)",
+    "[ 💧 Power ]": "unit_power_offset (Мана/энергия/ярость u32)",
+    "[ ⚡ CastSpellID ]": "cast_spell_id_offset (Активный спелл каста u32)",
+    "[ ⏱️ CastEndTime ]": "cast_end_time_offset (Таймер окончания каста u32)",
+    "[ 🌀 ChannelSpellID ]": "channel_spell_id_offset (Потоковый спелл u32)",
+    "[ ⏱️ ChannelEndTime ]": "channel_end_time_offset (Таймер окончания потокового спелла u32)",
+    "[ 🛡️ AuraTable ]": "aura_table_offset (Указатель на массив аур u64)",
+    "[ 🔢 AuraCount ]": "aura_count_offset (Количество аур u32)",
+    "[ ⚔️ CombatFlag ]": "combat_flag_rva (Флаг нахождения в бою u64/u32)"
+  },
+  "offsets": {
+    "entity_table_rva": "0x04728BE8",
+    "target_guid_low_rva": "0x06A32478",
+    "target_guid_high_rva": "0x06A32480",
+    "player_unit_rva": "0x04C1A770",
+    "mouseover_guid_rva": "0x04C18288",
+    "unit_health_offset": "0x1E28",
+    "unit_max_health_offset": "0x1E30",
+    "entry_coords_offset": "0x0060",
+    "entry_facing_offset": "0x0070",
+    "entry_speed_offset": "0x0080",
+    "unit_power_offset": "0x1E48",
+    "cast_spell_id_offset": "0x03EC",
+    "cast_end_time_offset": "0x041C",
+    "channel_spell_id_offset": "0x0420",
+    "channel_end_time_offset": "0x042C",
+    "aura_table_offset": "0x05F0",
+    "aura_count_offset": "0x05F8",
+    "combat_flag_rva": "0x04B15F90"
+  }
+}

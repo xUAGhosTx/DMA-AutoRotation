@@ -1,0 +1,12 @@
+=== PORTOLAN XREF HUNTER REPORT ===
+Target String: TargetGUID
+PID: 17860
+Base: 0x0000000140000000
+Timestamp: 1794250838
+
+HITS FOUND: 1
+
+#1 | Code VA: 0x142583A1D (RVA: +0x48A1A10) | Inst: 🎯 TargetGUID | Target VA: 0x0
+     Bytes: 48 8B 0D ? ? ? ? 48 8B 15 ? ? ? ? 48 39 08
+     Context: Найден AOB опкод в секции .text (685 мс)
+

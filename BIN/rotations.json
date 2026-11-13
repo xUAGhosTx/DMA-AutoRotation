@@ -1,0 +1,182 @@
+{
+  "active_index": 0,
+  "profiles": [
+    {
+      "name": "Чернокнижник (Афли)",
+      "active": true,
+      "trigger": "Mouse5",
+      "rules": [
+        {
+          "enabled": true,
+          "name": "Шкура демона",
+          "spell_id": null,
+          "key": "Shift+1",
+          "condition": "AlwaysFiller",
+          "threshold_ms": 3000,
+          "aura_target": "Player",
+          "aura_presence": "Absent",
+          "aura_name": "Шкура демона",
+          "conditions": [
+            {
+              "logic": "AND",
+              "aura_target": "Player",
+              "aura_presence": "Absent",
+              "aura_name": "Шкура демона",
+              "threshold_ms": 3000
+            }
+          ],
+          "check_hp": true,
+          "hp_target": "Player",
+          "min_hp": 0,
+          "max_hp": 100,
+          "check_interrupt": false,
+          "interrupt_pct": 65,
+          "check_range": false,
+          "min_range": 0.0,
+          "max_range": 30.0
+        },
+        {
+          "enabled": true,
+          "name": "Похищение души",
+          "spell_id": null,
+          "key": "Shift+4",
+          "condition": "AlwaysFiller",
+          "threshold_ms": 0,
+          "aura_target": "None",
+          "aura_presence": "Absent",
+          "aura_name": "",
+          "conditions": [
+            {
+              "logic": "AND",
+              "aura_target": "None",
+              "aura_presence": "Absent",
+              "aura_name": "",
+              "threshold_ms": 0
+            }
+          ],
+          "check_hp": true,
+          "hp_target": "Target",
+          "min_hp": 0,
+          "max_hp": 35,
+          "check_interrupt": false,
+          "interrupt_pct": 70,
+          "check_range": false,
+          "min_range": 0.0,
+          "max_range": 30.0
+        },
+        {
+          "enabled": true,
+          "name": "Порча",
+          "spell_id": null,
+          "key": "Shift+0",
+          "condition": "MissingOrExpiring",
+          "threshold_ms": 3500,
+          "aura_target": "Target",
+          "aura_presence": "Absent",
+          "aura_name": "",
+          "conditions": [],
+          "check_hp": false,
+          "hp_target": "Target",
+          "min_hp": 0,
+          "max_hp": 100,
+          "check_interrupt": false,
+          "interrupt_pct": 70,
+          "check_range": true,
+          "min_range": 0.0,
+          "max_range": 30.0
+        },
+        {
+          "enabled": true,
+          "name": "Бич агонии",
+          "spell_id": null,
+          "key": "Shift+e",
+          "condition": "AlwaysFiller",
+          "threshold_ms": 0,
+          "aura_target": "Target",
+          "aura_presence": "Absent",
+          "aura_name": "Проклятие агонии",
+          "conditions": [
+            {
+              "logic": "AND",
+              "aura_target": "Target",
+              "aura_presence": "Absent",
+              "aura_name": "Проклятие агонии",
+              "threshold_ms": 0
+            }
+          ],
+          "check_hp": false,
+          "hp_target": "Target",
+          "min_hp": 0,
+          "max_hp": 100,
+          "check_interrupt": false,
+          "interrupt_pct": 70,
+          "check_range": true,
+          "min_range": 0.0,
+          "max_range": 30.0
+        },
+        {
+          "enabled": true,
+          "name": "Жертвенный огонь",
+          "spell_id": null,
+          "key": "Shift+q",
+          "condition": "MissingOrExpiring",
+          "threshold_ms": 3500,
+          "aura_target": "Target",
+          "aura_presence": "Absent",
+          "aura_name": "",
+          "conditions": [],
+          "check_hp": false,
+          "hp_target": "Target",
+          "min_hp": 0,
+          "max_hp": 100,
+          "check_interrupt": false,
+          "interrupt_pct": 70,
+          "check_range": true,
+          "min_range": 0.0,
+          "max_range": 30.0
+        },
+        {
+          "enabled": true,
+          "name": "Стрела Тьмы",
+          "spell_id": null,
+          "key": "Shift+2",
+          "condition": "AlwaysFiller",
+          "threshold_ms": 0,
+          "aura_target": "None",
+          "aura_presence": "Absent",
+          "aura_name": "",
+          "conditions": [
+            {
+              "logic": "AND",
+              "aura_target": "None",
+              "aura_presence": "Absent",
+              "aura_name": "",
+              "threshold_ms": 0
+            }
+          ],
+          "check_hp": false,
+          "hp_target": "Target",
+          "min_hp": 20,
+          "max_hp": 100,
+          "check_interrupt": false,
+          "interrupt_pct": 70,
+          "check_range": true,
+          "min_range": 0.0,
+          "max_range": 30.0
+        }
+      ],
+      "min_delay_ms": 240,
+      "max_delay_ms": 380,
+      "min_press_ms": 110,
+      "max_press_ms": 190,
+      "humanize": true,
+      "wait_cast": true,
+      "check_gcd": true,
+      "reset_on_target_change": true,
+      "protect_channeling": true,
+      "auto_target": true,
+      "auto_attack": true,
+      "auto_attack_key": "Shift+6"
+    }
+  ]
+}
